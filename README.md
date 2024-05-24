@@ -1,43 +1,31 @@
 # AD-Management-Tool
 Manage Users and Devices in your AD 
 
-# Funktions:
-User Management
--Creation, modification, and deletion of user accounts.
--User group management, including creation and membership modifications.
+# Funktions
 
-Group Policy Management
--Configuration and management of Group Policy Objects (GPOs).
--Policy enforcement and troubleshooting.
+Create and modify user accounts
+Retrieve user attributes (e.g., city, telephone number)
 
-Organizational Unit (OU) Management
--Creation, modification, and deletion of OUs.
--Delegation of administrative tasks within OUs.
+Add and remove users from groups
+Retrieve group memberships
 
-Computer Management
--Management of computer objects within the AD domain.
--Configuration of computer policies and settings.
+Check device IP address
+Retrieve device operating system version
+Check device status (disabled or locked)
 
-Security Management
--User access control through permissions and security settings.
--Security auditing and reporting.
+Read BitLocker keys
+Create shared mailboxes and Teams groups
+Add users to shared mailboxes
+Utilize Azure Automation for task automation
 
-Authentication and Authorization
--Configuration and management of authentication protocols.
--Authorization settings for user access to resources.
+AutoHotKey for automating keystrokes
+PowerShell for executing commands
+Integration with Azure services:
+Utilize Graph API for Azure interactions
 
-Reporting and Monitoring
--Generation of reports on user activity, group membership, and system health.
--Monitoring of AD infrastructure performance and availability.
+256-bit encryption for account data
+Audit logging of user actions
 
-Integration and Automation
--Integration with other systems and tools for centralized management.
--Automation of routine administrative tasks through scripting or workflows.
+Graphical user interface for ease of use
 
-Backup and Recovery
--Backup and restoration of AD data and configurations.
--Disaster recovery planning and execution.
-
-Compliance and Governance
--Enforcing compliance with organizational policies and regulatory requirements.
--Auditing and documentation of changes and activities within AD.
+Provide user documentation for reference.

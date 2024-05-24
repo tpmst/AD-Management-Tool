@@ -5,7 +5,7 @@ Manage Users and Devices in your AD
 
 This README provides an overview of the functionalities offered by the application.
 
-## User Account Management
+### User Account Management
 - **Create and Modify User Accounts:** Allows users to create and modify user accounts with various attributes such as city, telephone number, etc.
 - **Retrieve User Attributes:** Enables retrieval of user attributes like city, telephone number, etc.
 

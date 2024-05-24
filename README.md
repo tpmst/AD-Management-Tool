@@ -41,9 +41,8 @@ This README provides an overview of the functionalities offered by the applicati
 ### Documentation
 - **User Documentation:** Provides comprehensive user documentation for reference.
 
-#Application Setup
 
-## Introduction
+# Application Setup
 This guide will walk you through the process of creating an Azure application and configuring the application client ID in the appsettings.json file for your project.
 
 ### Prerequisites

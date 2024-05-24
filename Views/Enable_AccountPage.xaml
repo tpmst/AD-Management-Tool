@@ -1,0 +1,99 @@
+﻿<Page
+    x:Class="ADTool.Views.Enable_AccountPage"
+    Style="{DynamicResource MahApps.Styles.Page}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:properties="clr-namespace:ADTool.Properties"
+        xmlns:behaviors="clr-namespace:ADTool.Behaviors"
+xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+
+    mc:Ignorable="d"
+    Background="Transparent"
+    d:DesignHeight="550" d:DesignWidth="800">
+    <Page.Resources>
+        <DataTemplate x:Key="contentGridItemTemplate">
+            <Border Style="{StaticResource ContentGridItemShadow}">
+                <Grid
+                Width="160"
+                Height="160"
+                Background="{StaticResource color3}">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+                        <iconPacks:PackIconRemixIcon Kind="UserLine" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="{StaticResource color1}"></iconPacks:PackIconRemixIcon>
+                        <TextBlock
+                        Name="ComputerName"
+                        Margin="{StaticResource XXSmallTopMargin}"
+                        HorizontalAlignment="Center"
+                        Foreground="{StaticResource color1}"
+                        Style="{StaticResource BodyTextStyle}"
+                        Text="{Binding UserName}" />
+
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </Page.Resources>
+    
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="48" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock
+                Style="{StaticResource PageTitleStyle}"
+                Margin="{StaticResource MediumLeftMargin}"
+                Text="Enable an Account" />
+            <Grid
+                Grid.Row="1"
+                Margin="24,0,24,0"
+                >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid VerticalAlignment="Top">
+                <Border CornerRadius="15" Height="118" Width="695" Opacity="5" Margin="10,5,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Border.Background>
+                        <SolidColorBrush Color="Black" Opacity="0.2"/>
+                    </Border.Background>
+                </Border>
+                <Border CornerRadius="15" HorizontalAlignment="Center" Height="118" Margin="0,0,0,0" VerticalAlignment="Top" Width="695" Background="{StaticResource color3}"></Border>
+                <Label Content="Please enter the Username:" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Height="39" Width="554" FontSize="20" Foreground="{StaticResource color5}" Name="Label"/>
+                    <TextBox x:Name="Username_Textbox" Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" Foreground="{StaticResource color5}" HorizontalAlignment="Center" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Margin="0,71,0,0" BorderThickness="3,3,3,3" BorderBrush="#FF1B5A8C" >
+                        <TextBox.SelectionBrush>
+                            <ImageBrush/>
+                        </TextBox.SelectionBrush>
+                        <TextBox.SelectionTextBrush>
+                            <ImageBrush/>
+                        </TextBox.SelectionTextBrush>
+                        <TextBox.CaretBrush>
+                            <ImageBrush/>
+                        </TextBox.CaretBrush>
+                        <TextBox.Background>
+                            <ImageBrush/>
+                        </TextBox.Background>
+                    </TextBox>
+                </Grid>
+            </Grid>
+                <ListView
+                VerticalAlignment="Top"
+                
+                Name="ListView"
+                Grid.Row="1"
+                Margin="{StaticResource SmallLeftMargin}"
+                SelectionMode="Single"
+                ItemsSource="{Binding Source}"
+                Style="{StaticResource ContentGridListViewStyle}"
+                ItemTemplate="{StaticResource contentGridItemTemplate}">
+                    <i:Interaction.Behaviors>
+                        <behaviors:ListViewItemSelectionBehavior Command="{Binding NavigateToDetailCommand}" />
+                    </i:Interaction.Behaviors>
+                </ListView>
+            </Grid>
+        
+        </Grid>
+    
+</Page>

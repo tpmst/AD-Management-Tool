@@ -1,0 +1,182 @@
+﻿<Page
+    x:Class="ADTool.Views.DashboardPage"
+    Style="{DynamicResource MahApps.Styles.Page}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+    xmlns:properties="clr-namespace:ADTool.Properties"
+    xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+    xmlns:behaviors="clr-namespace:ADTool.Behaviors"
+    mc:Ignorable="d"
+    Background="Transparent"
+    d:Height="800"
+    DataContext="{Binding IsAsync=True}">
+    <Page.Resources>
+        <DataTemplate x:Key="contentGridItemTemplate">
+            <Border Style="{StaticResource ContentGridItemShadow}">
+            <Grid
+                Width="160"
+                Height="160"
+                Background="{StaticResource color3}"
+                xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
+                    <mah:FontIcon FontFamily="Segoe MDL2 Assets" Glyph="{Binding GlyphCode}"></mah:FontIcon>
+
+                    <TextBlock
+                        Margin="{StaticResource XXSmallTopMargin}"
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource BodyTextStyle}"
+                        Text="{Binding SiteName}" 
+                        >
+                        
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+            </Border>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid >
+
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="190,50,0,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="400"></RowDefinition>
+                <RowDefinition Height="360"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Height="400"  VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"></ColumnDefinition>
+                    <ColumnDefinition Width="400"></ColumnDefinition>
+                    <ColumnDefinition Width="180"></ColumnDefinition>
+                    <ColumnDefinition Width="160"></ColumnDefinition>
+                    <ColumnDefinition Width="40"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Border Background="{StaticResource color5}" CornerRadius="25" Height="370" Margin="0,0,0,30" Width="360" HorizontalAlignment="Left"></Border>
+                <Border Background="{StaticResource color5}" Grid.Column="1" CornerRadius="25" Height="370" Margin="0,0,0,30" Width="390" HorizontalAlignment="Left"></Border>
+                <Label Grid.Column="0" Content="User" FontSize="25" Margin="5,10,0,0" FontWeight="Light"></Label>
+                <Grid Margin="0,0,30,30" Height="360">
+                    <Grid Height="53" VerticalAlignment="Top" HorizontalAlignment="Center" Width="110">
+                        <Grid VerticalAlignment="Bottom">
+                            <Border Height="20" Width="20" Background="IndianRed" CornerRadius="10" HorizontalAlignment="Left"></Border>
+                            <Label Content="Disabled Users" Height="30" HorizontalAlignment="Left" Margin="20,0,0,0"></Label>
+                        </Grid>
+                        <Grid VerticalAlignment="Top">
+                        <Label Content="Total Users" Height="30" HorizontalAlignment="Left" Margin="20,0,0,0"></Label>
+                        <Border Height="20" Width="20" Background="CornflowerBlue" HorizontalAlignment="Left" CornerRadius="10" ></Border>
+                        </Grid>
+                    </Grid>
+                    
+                    
+                    <lvc:CartesianChart Series="{Binding LatencyGridDataUser}" XAxes="{Binding LatencyGridDataUserXachse}" YAxes="{Binding LatencyGridDataYachse}"></lvc:CartesianChart>
+                </Grid>
+                <Label Grid.Column="1" Content="Computer" FontSize="25" Margin="5,10,0,0" FontWeight="Light"></Label>
+                <Grid Margin="30,0,0,25" Grid.Column="1" Height="360">
+                    <lvc:CartesianChart Series="{Binding LatencyGridDataComps}" XAxes="{Binding LatencyGridDataCompsXachse}" YAxes="{Binding LatencyGridDataYachse}"></lvc:CartesianChart>
+                </Grid>
+                <Grid x:Name="Computer_Prebuild_Count" HorizontalAlignment="Right" Height="180" Width="150" VerticalAlignment="Top" Margin="0,50,5,0" Grid.Column="2" >
+
+                    <Border Height="170" Width="140" CornerRadius="25"  Opacity="5" Margin="10,10,0,0">
+                        <Border.Background>
+                            <SolidColorBrush Color="Black" Opacity="0.2"/>
+                        </Border.Background>
+                    </Border>
+                    <Border Height="170" Width="140" CornerRadius="25"  Opacity="5" Background="{StaticResource color3}"/>
+                    <Border Height="170" Width="140" CornerRadius="25" BorderBrush="{StaticResource color3}" BorderThickness="2"/>
+                    <iconPacks:PackIconRemixIcon Kind="ComputerLine" Foreground="{StaticResource color5}" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="30"></iconPacks:PackIconRemixIcon>
+                    <iconPacks:PackIconRemixIcon Kind="toolsLine" Foreground="{StaticResource color5}" Width="25" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="30"></iconPacks:PackIconRemixIcon>
+                    <Label x:Name="Computer_Prebuild_Count_TextBox" Foreground="{StaticResource color5}" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10,85,0,0" Width="140" Content=""></Label>
+                    <Label Content="Prebuild" VerticalAlignment="Bottom" Foreground="{StaticResource color5}" HorizontalAlignment="Left" Margin="10,0,0,20" FontSize="19"></Label>
+                    <Button Style="{StaticResource dashboardButton}" Click="MovePagePrebuild" IsEnabled="True" ></Button>
+
+                </Grid>
+                <Grid x:Name="Computer_Disabeled_Count" HorizontalAlignment="Left" Height="180" Width="150" VerticalAlignment="Top" Margin="0,50,0,0" Grid.Column="3">
+
+                    <Border Height="170" Width="140" CornerRadius="25"  Opacity="5" Margin="10,10,0,0">
+                        <Border.Background>
+                            <SolidColorBrush Color="Black" Opacity="0.2"/>
+                        </Border.Background>
+                    </Border>
+                    <Border Height="170" Width="140" CornerRadius="25"  Opacity="5" Background="{StaticResource color3}"/>
+                    <Border Height="170" Width="140" CornerRadius="25" BorderBrush="{StaticResource color3}" BorderThickness="2"/>
+                    <iconPacks:PackIconRemixIcon Kind="ComputerLine" Foreground="{StaticResource color5}" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="30"></iconPacks:PackIconRemixIcon>
+                    <iconPacks:PackIconRemixIcon Kind="CloseLine" Foreground="{StaticResource color5}" Width="25" Height="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="25"></iconPacks:PackIconRemixIcon>
+                    <Label x:Name="Computer_Disabled_Count_TextBox" Foreground="{StaticResource color5}" FontSize="30" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10,85,0,0" Width="140" Content=""></Label>
+                    <Label Content="Disabled" VerticalAlignment="Bottom" Foreground="{StaticResource color5}" HorizontalAlignment="Left" Margin="10,0,0,20" FontSize="19"></Label>
+                    <Button Style="{StaticResource dashboardButton}" Click="MovePageDisabeldComps" IsEnabled="True" ></Button>
+
+                </Grid>
+
+
+            </Grid>
+
+
+            <Grid x:Name="DataGrid" Grid.Row="1">
+
+                <Border Background="{StaticResource color5}" CornerRadius="25" Height="350" Width="1050" HorizontalAlignment="Left"></Border>
+                <Label Content="Latencys to DCs" FontSize="25" FontWeight="Light" Margin="10"></Label>
+
+                <Grid x:Name="latencyGrid" Height="300" Width="1000" HorizontalAlignment="Left" Margin="25">
+
+                    <lvc:CartesianChart Series="{Binding LatencyGridData}" XAxes="{Binding LatencyGridDataXachse}" YAxes="{Binding LatencyGridDataYachse}"></lvc:CartesianChart>
+                </Grid>
+
+            </Grid>
+
+
+            <Grid Height="50" Width="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,0">
+                <Grid.Resources>
+
+                </Grid.Resources>
+
+                <iconPacks:PackIconRemixIcon x:Name="RefreshIcon" Height="48" Width="48" Kind="RefreshLine" HorizontalAlignment="Right" ToolTip="Refreshes the Dashboard" Foreground="LimeGreen">
+                    <iconPacks:PackIconRemixIcon.RenderTransform>
+                        <RotateTransform />
+                    </iconPacks:PackIconRemixIcon.RenderTransform>
+                </iconPacks:PackIconRemixIcon>
+
+                <Button Click="refreshDashboard" BorderBrush="White" Opacity="0">
+                    <Button.Foreground>
+                        <ImageBrush/>
+                    </Button.Foreground>
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+
+            </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="48" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock
+                Style="{StaticResource PageTitleStyle}"
+                Margin="{StaticResource MediumLeftMargin}"
+                Text="{x:Static properties:Resources.DashboardPageTitle}"/>
+            <ListView
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Foreground="{StaticResource color5}"
+                Grid.Row="1"
+                Margin="{StaticResource SmallLeftMargin}"
+                SelectionMode="Single"
+                ItemsSource="{Binding Source}"
+                Style="{StaticResource ContentGridListViewStyle}"
+                ItemTemplate="{StaticResource contentGridItemTemplate}"
+                Width="200" Height="520" >
+                <i:Interaction.Behaviors>
+                    <behaviors:ListViewItemSelectionBehavior Command="{Binding NavigateToDetailCommand}" />
+                </i:Interaction.Behaviors>
+            </ListView>
+            
+
+
+        </Grid>
+        
+    </Grid>
+</Page>

@@ -1,0 +1,284 @@
+﻿<Page
+    x:Class="ADTool.Views.NewUserPage"
+    Style="{DynamicResource MahApps.Styles.Page}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:properties="clr-namespace:ADTool.Properties"
+    mc:Ignorable="d"
+    Background="Transparent"
+    d:DesignHeight="640" d:DesignWidth="1250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock
+            Style="{StaticResource PageTitleStyle}"
+            Margin="{StaticResource MediumLeftMargin}"
+            Text="New User" />
+        <Grid
+            Grid.Row="1"
+            Margin="{StaticResource MediumLeftRightMargin}"
+            >
+            <!--
+            The Mahapps Gray10 color represents where you should place your content.
+            Place your content here.
+            -->
+            <Grid>
+                <Grid Name="Total" Height="440" Width="790" VerticalAlignment="Top" Margin="170,20,0,0">
+                    <Border Name="shadowBorder" Height="420" Width="520" CornerRadius="25"  Opacity="5" Margin="0,10,260,0">
+                        <Border.Background>
+                            <SolidColorBrush Color="Black" Opacity="0.2"/>
+                        </Border.Background>
+                    </Border>
+                    <Border Name="TotalBorder" Height="420"  Background="{StaticResource color3}" CornerRadius="20" Width="520" HorizontalAlignment="Left">
+
+                    </Border>
+                    <Grid VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="250"></ColumnDefinition>
+                            <ColumnDefinition Width="250"></ColumnDefinition>
+                            <ColumnDefinition Width="250"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"></RowDefinition>
+                            <RowDefinition Height="60"></RowDefinition>
+                            <RowDefinition Height="60"></RowDefinition>
+                            <RowDefinition Height="60"></RowDefinition>
+                            <RowDefinition Height="60"></RowDefinition>
+                            <RowDefinition Height="60"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Grid.Column="0">
+                            <Label Content="Firstname:" FontSize="15"></Label>
+                            <Border BorderBrush="{DynamicResource MahApps.Brushes.Accent3}" BorderThickness="3" VerticalAlignment="Bottom" Height="30" Margin="5" ></Border>
+                            <TextBox Name="Firstname_input" VerticalAlignment="Bottom" Height="30" Margin="5">
+                                <TextBox.SelectionTextBrush>
+                                    <ImageBrush/>
+                                </TextBox.SelectionTextBrush>
+                                <TextBox.CaretBrush>
+                                    <ImageBrush/>
+                                </TextBox.CaretBrush>
+                                <TextBox.BorderBrush>
+                                    <ImageBrush/>
+                                </TextBox.BorderBrush>
+                                <TextBox.Background>
+                                    <ImageBrush/>
+                                </TextBox.Background>
+                            </TextBox>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="0">
+                            <Label Content="Lastname:" FontSize="15"></Label>
+                            <Border BorderBrush="{DynamicResource MahApps.Brushes.Accent3}" BorderThickness="3" VerticalAlignment="Bottom" Height="30" Margin="5" ></Border>
+                            <TextBox Name="Lastname_input" VerticalAlignment="Bottom" Height="30" Margin="5">
+                                <TextBox.SelectionTextBrush>
+                                    <ImageBrush/>
+                                </TextBox.SelectionTextBrush>
+                                <TextBox.CaretBrush>
+                                    <ImageBrush/>
+                                </TextBox.CaretBrush>
+                                <TextBox.BorderBrush>
+                                    <ImageBrush/>
+                                </TextBox.BorderBrush>
+                                <TextBox.Background>
+                                    <ImageBrush/>
+                                </TextBox.Background>
+                            </TextBox>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="0">
+                            <Label Content="Company:" FontSize="15"></Label>
+                            <ComboBox x:Name="company_input" VerticalAlignment="Bottom" Height="30" Margin="5"/>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="0">
+                            <Label Content="Region:" FontSize="15"></Label>
+                            <ComboBox x:Name="region_Input" VerticalAlignment="Bottom" Height="30" Margin="5"/>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="0">
+                            <Label Content="Branch:" FontSize="15"></Label>
+                            <ComboBox x:Name="branch_input" VerticalAlignment="Bottom" Height="30" Margin="5"/>
+                        </Grid>
+                        <Grid Grid.Row="5" Grid.Column="0">
+                            <Label Content="City:" FontSize="15"></Label>
+                            <ComboBox x:Name="city_input" VerticalAlignment="Bottom" Height="30" Margin="5"/>
+                        </Grid>
+                        <Grid Grid.Row="0" Grid.Column="1">
+                            <Label Content="EmployeeID:" FontSize="15"></Label>
+                            <Border BorderBrush="{DynamicResource MahApps.Brushes.Accent3}" BorderThickness="3" VerticalAlignment="Bottom" Height="30" Margin="5" ></Border>
+                            <TextBox Name="EmployeeID_input" VerticalAlignment="Bottom" Height="30" Margin="5">
+                                <TextBox.SelectionTextBrush>
+                                    <ImageBrush/>
+                                </TextBox.SelectionTextBrush>
+                                <TextBox.CaretBrush>
+                                    <ImageBrush/>
+                                </TextBox.CaretBrush>
+                                <TextBox.BorderBrush>
+                                    <ImageBrush/>
+                                </TextBox.BorderBrush>
+                                <TextBox.Background>
+                                    <ImageBrush/>
+                                </TextBox.Background>
+                            </TextBox>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="1">
+                            <Label Content="Ticketnumber:" FontSize="15"></Label>
+                            <Border BorderBrush="{DynamicResource MahApps.Brushes.Accent3}" BorderThickness="3" VerticalAlignment="Bottom" Height="30" Margin="5" ></Border>
+                            <TextBox Name="Ticketnumber_input" VerticalAlignment="Bottom" Height="30" Margin="5">
+                                <TextBox.SelectionTextBrush>
+                                    <ImageBrush/>
+                                </TextBox.SelectionTextBrush>
+                                <TextBox.CaretBrush>
+                                    <ImageBrush/>
+                                </TextBox.CaretBrush>
+                                <TextBox.BorderBrush>
+                                    <ImageBrush/>
+                                </TextBox.BorderBrush>
+                                <TextBox.Background>
+                                    <ImageBrush/>
+                                </TextBox.Background>
+                            </TextBox>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="1">
+                            <Label Content="Submitter:" FontSize="15"></Label>
+                            <Border BorderBrush="{DynamicResource MahApps.Brushes.Accent3}" BorderThickness="3" VerticalAlignment="Bottom" Height="30" Margin="5" ></Border>
+                            <Button Height="15" Width="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,5,0" Name="CheckNames_Submitter" Content="Check names" Click="Check_Names" FontSize="10">
+                            </Button>
+                            <TextBox Name="Submitter_input" VerticalAlignment="Bottom" Height="30" Margin="5">
+                                <TextBox.SelectionTextBrush>
+                                    <ImageBrush/>
+                                </TextBox.SelectionTextBrush>
+                                <TextBox.CaretBrush>
+                                    <ImageBrush/>
+                                </TextBox.CaretBrush>
+                                <TextBox.BorderBrush>
+                                    <ImageBrush/>
+                                </TextBox.BorderBrush>
+                                <TextBox.Background>
+                                    <ImageBrush/>
+                                </TextBox.Background>
+                            </TextBox>
+                            <ComboBox Name="Submitter_ComboBox" VerticalAlignment="Bottom" Height="30" Margin="5" IsEnabled="False" Visibility="Collapsed" SelectionChanged="Selection_Changed"/>
+                        </Grid>
+                        <Grid Grid.Row="3" Grid.Column="1">
+                            <Label Content="Device:" FontSize="15"></Label>
+                            <CheckBox Name="Device_input" VerticalAlignment="Bottom" Height="30" Margin="5" Click="Check_Selection_Changed"/>
+                        </Grid>
+                        <Grid Grid.Row="4" Grid.Column="1" >
+                            <Label Content="Duedate:" FontSize="15"></Label>
+                            <DatePicker Name="DueDate_input" Height="30" VerticalAlignment="Bottom" Margin="5" BorderBrush="{DynamicResource MahApps.Brushes.Accent3}" BorderThickness="3">
+                                <DatePicker.Background>
+                                    <ImageBrush/>
+                                </DatePicker.Background>
+                            </DatePicker>
+                        </Grid>
+                        <Grid Grid.Row="0" Grid.RowSpan="4" Grid.Column="2" Name="DeviceGrid" Visibility="Collapsed" IsEnabled="False">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60"></RowDefinition>
+                                <RowDefinition Height="60"></RowDefinition>
+                                <RowDefinition Height="60"></RowDefinition>
+                                <RowDefinition Height="60"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Label Content="Devicecondition:" FontSize="15"></Label>
+                                <RadioButton Height="30" Width="115" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5" Content="New" Name="DeivceNew">
+                                    <RadioButton.Background>
+                                        <ImageBrush/>
+                                    </RadioButton.Background>
+                                </RadioButton>
+                                <RadioButton Height="30" Width="115" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5" Content="Old" Name="DeivceOld">
+                                    <RadioButton.Background>
+                                        <ImageBrush/>
+                                    </RadioButton.Background>
+                                </RadioButton>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Label Content="DeviceBrand:" FontSize="15"></Label>
+                                <RadioButton Height="30" Width="115" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5" Content="Dell" Name="DeivceDell">
+                                    <RadioButton.Background>
+                                        <ImageBrush/>
+                                    </RadioButton.Background>
+                                </RadioButton>
+                                <RadioButton Height="30" Width="115" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5" Content="Lenovo" Name="DeivceLeonvo">
+                                    <RadioButton.Background>
+                                        <ImageBrush/>
+                                    </RadioButton.Background>
+                                </RadioButton>
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Label Content="Devicemodel:" FontSize="15"></Label>
+                                <Border BorderBrush="{DynamicResource MahApps.Brushes.Accent3}" BorderThickness="3" VerticalAlignment="Bottom" Height="30" Margin="5" ></Border>
+                                <TextBox Name="Devicemodel_input" VerticalAlignment="Bottom" Height="30" Margin="5">
+                                    <TextBox.SelectionTextBrush>
+                                        <ImageBrush/>
+                                    </TextBox.SelectionTextBrush>
+                                    <TextBox.CaretBrush>
+                                        <ImageBrush/>
+                                    </TextBox.CaretBrush>
+                                    <TextBox.BorderBrush>
+                                        <ImageBrush/>
+                                    </TextBox.BorderBrush>
+                                    <TextBox.Background>
+                                        <ImageBrush/>
+                                    </TextBox.Background>
+                                </TextBox>
+                            </Grid>
+                            <Grid Grid.Row="3">
+                                <Label Content="DeviceTag:" FontSize="15"></Label>
+                                <Border BorderBrush="{DynamicResource MahApps.Brushes.Accent3}" BorderThickness="3" VerticalAlignment="Bottom" Height="30" Margin="5" ></Border>
+                                <TextBox Name="DeviceTag_input" VerticalAlignment="Bottom" Height="30" Margin="5">
+                                    <TextBox.SelectionTextBrush>
+                                        <ImageBrush/>
+                                    </TextBox.SelectionTextBrush>
+                                    <TextBox.CaretBrush>
+                                        <ImageBrush/>
+                                    </TextBox.CaretBrush>
+                                    <TextBox.BorderBrush>
+                                        <ImageBrush/>
+                                    </TextBox.BorderBrush>
+                                    <TextBox.Background>
+                                        <ImageBrush/>
+                                    </TextBox.Background>
+                                </TextBox>
+                            </Grid>
+                        </Grid>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid>
+                
+                <Button x:Name="AddnewUser" Content="Add new user" HorizontalAlignment="Center" Height="66" VerticalAlignment="Bottom" Margin="0,0,0,40" Width="304"
+                BorderThickness="0"
+                            
+                Foreground="Black"
+                FontSize="20"
+                FontFamily="Montserrat"
+                Cursor="Hand" Click="Button_Click" Background="#FF16D42A"                          
+                            >
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#FF3191DD"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FF175B7B"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="250" Height="60"
+                            CornerRadius="20"
+                            Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

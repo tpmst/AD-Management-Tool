@@ -20,7 +20,7 @@ Utilize Azure Automation for task automation
 
 AutoHotKey for automating keystrokes
 PowerShell for executing commands
-Integration with Azure services:
+
 Utilize Graph API for Azure interactions
 
 256-bit encryption for account data

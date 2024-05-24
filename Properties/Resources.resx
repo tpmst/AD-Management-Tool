@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="ShellCreate_Shared_MailboxPage" xml:space="preserve">
+		    <value>Create_Shared_Mailbox</value>
+    </data>
+    <data name="Create_Shared_MailboxPageTitle" xml:space="preserve">
+		    <value>Create_Shared_Mailbox</value>
+    </data>
+    <data name="ShellOneDriveProvisioningPage" xml:space="preserve">
+		    <value>OneDriveProvisioning</value>
+    </data>
+    <data name="OneDriveProvisioningPageTitle" xml:space="preserve">
+		    <value>OneDriveProvisioning</value>
+    </data>
+    <data name="ShellAdd_SharedMailboxUserPage" xml:space="preserve">
+		    <value>Add_SharedMailboxUser</value>
+    </data>
+    <data name="Add_SharedMailboxUserPageTitle" xml:space="preserve">
+		    <value>Add_SharedMailboxUser</value>
+    </data>
+    <data name="ShellEnable_DevicePage" xml:space="preserve">
+		    <value>Enable_Device</value>
+    </data>
+    <data name="Enable_DevicePageTitle" xml:space="preserve">
+		    <value>Enable_Device</value>
+    </data>
+    <data name="ShellNewUserPage" xml:space="preserve">
+		    <value>NewUser</value>
+    </data>
+    <data name="NewUserPageTitle" xml:space="preserve">
+		    <value>NewUser</value>
+    </data>
+    <data name="ShellPrebuildComputersPage" xml:space="preserve">
+		    <value>PrebuildComputers</value>
+    </data>
+    <data name="PrebuildComputersPageTitle" xml:space="preserve">
+		    <value>PrebuildComputers</value>
+    </data>
+    <data name="ShellDashboardPage" xml:space="preserve">
+		    <value>Dashboard</value>
+    </data>
+    <data name="DashboardPageTitle" xml:space="preserve">
+		    <value>Dashboard</value>
+    </data>
+    <data name="ShellUsersPage" xml:space="preserve">
+		    <value>Users</value>
+    </data>
+    <data name="UsersPageTitle" xml:space="preserve">
+		    <value>Users</value>
+    </data>
+    <data name="ShellAdd_Remove_User_GroupPage" xml:space="preserve">
+		    <value>Add_Remove_User_Group</value>
+    </data>
+    <data name="Add_Remove_User_GroupPageTitle" xml:space="preserve">
+		    <value>Add_Remove_User_Group</value>
+    </data>
+    <data name="ShellGet_BitlockerPage" xml:space="preserve">
+		    <value>Get_Bitlocker</value>
+    </data>
+    <data name="Get_BitlockerPageTitle" xml:space="preserve">
+		    <value>Get_Bitlocker</value>
+    </data>
+    <data name="ShellEnable_AccountPage" xml:space="preserve">
+		    <value>Enable_Account</value>
+    </data>
+    <data name="Enable_AccountPageTitle" xml:space="preserve">
+		    <value>Enable_Account</value>
+    </data>
+    <data name="ShellListDetailsPage" xml:space="preserve">
+		    <value>ListDetails</value>
+    </data>
+    <data name="ListDetailsPageTitle" xml:space="preserve">
+		    <value>ListDetails</value>
+    </data>
+    <data name="ListDetailsListDescription" xml:space="preserve">
+		    <value>Sample Orders</value>
+    </data>
+    <data name="ShellDisable_Enable_AccountPage" xml:space="preserve">
+		    <value>Disable_Enable_Account</value>
+    </data>
+    <data name="Disable_Enable_AccountPageTitle" xml:space="preserve">
+		    <value>Disable_Enable_Account</value>
+    </data>
+    <data name="ShellCreate_UserPage" xml:space="preserve">
+		    <value>Create_User</value>
+    </data>
+    <data name="Create_UserPageTitle" xml:space="preserve">
+		    <value>Create_User</value>
+    </data>
+    <data name="ShellBlankPage" xml:space="preserve">
+		    <value>Blank</value>
+    </data>
+    <data name="BlankPageTitle" xml:space="preserve">
+		    <value>Blank</value>
+    </data>
+    <data name="SettingsPageUserTitle" xml:space="preserve">
+        <value>User</value>
+    </data>
+
+    <data name="SettingsPageLogOutButtonText" xml:space="preserve">
+        <value>Log out</value>
+        <comment>Log out button in Settings page</comment>
+    </data>
+    <data name="StatusUnauthorized" xml:space="preserve">
+        <value>User is unauthorized</value>
+        <comment>Status message for unauthorized login result</comment>
+    </data>
+    <data name="StatusNoNetworkAvailable" xml:space="preserve">
+        <value>There is no internet connection, please connect to the internet and try again.</value>
+        <comment>Status message for no network login result</comment>
+    </data>
+    <data name="StatusLoginFails" xml:space="preserve">
+        <value>Something went wrong during the login, please try again.</value>
+        <comment>Status message for login fails result</comment>
+    </data>
+    <data name="LogInPageTitle" xml:space="preserve">
+        <value>Log In</value>
+    </data>
+    <data name="LogInButton" xml:space="preserve">
+        <value>Click to log in</value>
+    </data>
+    <data name="ShellSettingsPage" xml:space="preserve">
+		    <value>Settings</value>
+    </data>
+    <data name="SettingsPageTitle" xml:space="preserve">
+		    <value>Settings</value>
+    </data>
+    <data name="SettingsPageAboutText" xml:space="preserve">
+        <value>Settings page placeholder text.  Your app description goes here.</value>
+    </data>
+    <data name="SettingsPageAboutTitle" xml:space="preserve">
+        <value>About this application</value>
+    </data>
+    <data name="SettingsPageChooseThemeText" xml:space="preserve">
+        <value>Choose Theme</value>
+    </data>
+    <data name="SettingsPagePersonalizationTitle" xml:space="preserve">
+        <value>Personalization</value>
+    </data>
+    <data name="SettingsPagePrivacyStatementText" xml:space="preserve">
+        <value>Privacy Statement</value>
+    </data>
+    <data name="SettingsPageRadioButtonDarkTheme" xml:space="preserve">
+        <value>Dark</value>
+    </data>
+    <data name="SettingsPageRadioButtonLightTheme" xml:space="preserve">
+        <value>Light</value>
+    </data>
+    <data name="SettingsPageRadioButtonWindowsDefaultTheme" xml:space="preserve">
+        <value>Default</value>
+    </data>
+    <data name="ShellCheck_User_AccountPage" xml:space="preserve">
+		    <value>Check_User_Account</value>
+    </data>
+    <data name="Check_User_AccountPageTitle" xml:space="preserve">
+		    <value>Check_User_Account</value>
+    </data>
+    <data name="ShellReset_User_PasswordPage" xml:space="preserve">
+		    <value>Reset_User_Password</value>
+    </data>
+    <data name="Reset_User_PasswordPageTitle" xml:space="preserve">
+		    <value>Reset_User_Password</value>
+    </data>
+    <data name="ShellDelete_DevicePage" xml:space="preserve">
+		    <value>Delete_Device</value>
+    </data>
+    <data name="Delete_DevicePageTitle" xml:space="preserve">
+		    <value>Delete_Device</value>
+    </data>
+    <data name="ShellLAPSPage" xml:space="preserve">
+		    <value>LAPS</value>
+    </data>
+    <data name="LAPSPageTitle" xml:space="preserve">
+		    <value>LAPS</value>
+    </data>
+    <data name="ShellGoBackButton" xml:space="preserve">
+        <value>Go back</value>
+    </data>
+    <data name="ShellHamburgerButtonName" xml:space="preserve">
+        <value>Open or close navigation</value>
+    </data>
+
+	<!--
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format
+		that is mostly human readable. The generation and parsing of the
+		various data types are done through the TypeConverter classes
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a
+		type or mimetype. Type corresponds to a .NET class that support
+		text/value conversion through the TypeConverter architecture.
+		Classes that don't support this are serialized and stored with the
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the
+		ResXResourceReader how to depersist the object. This is currently not
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format
+		that the ResXResourceWriter will generate, however the reader can
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+    <data name="AppDisplayName" xml:space="preserve">
+		<value>ADTool</value>
+	</data>
+</root>

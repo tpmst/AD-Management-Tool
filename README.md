@@ -1,7 +1,7 @@
 # AD-Management-Tool
 Manage Users and Devices in your AD 
 
-Funktions:
+# Funktions:
 User Management
 -Creation, modification, and deletion of user accounts.
 -User group management, including creation and membership modifications.
